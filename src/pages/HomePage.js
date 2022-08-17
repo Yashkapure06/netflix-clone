@@ -8,11 +8,11 @@ const HomePage = () => {
     return (
         <div>
             <Header/>
-            <Banner/>
+            {/* <Banner/>
             <Slider/>
             <Slider/>
             <Slider/>
-            <Slider/>
+            <Slider/> */}
 
 
         </div>
