@@ -4,11 +4,11 @@ import classNames from 'classnames';
 
 
 import logo from '../assets/logo-full.png';
-
+import smallLogo from '../assets/logo.png';
 
 const Header = () => {
 
-    const [ floating, setFloating] = useState(false);
+    const [ floating, setFloating ] = useState(false);
 
     useEffect(()=>{
         function handleScroll() {
@@ -42,7 +42,7 @@ const Header = () => {
             />
             <img
                 className="header__avatar"
-                // src={avatar}
+                src={smallLogo}
                 alt="Netflix avatar"
             />
         </div>
