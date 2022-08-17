@@ -21,7 +21,7 @@ class Api {
     try {
       json = await response.json();
     } catch (e) {
-      throw new Error(`Failed to parse response JSON: ${e.message}`);
+      console.log(e);
     }
 
     if (response.ok) {
@@ -38,8 +38,10 @@ class Api {
 
   _generateUrl(endpoint, params) {
     const search = qs.stringify({ ...this._baseSearchParams, ...params });
-    const url = path.join(this._baseUrl, endpoint);
-    return [url, search].join('?');
+    // const url = path.join(this._baseUrl, endpoint);
+    const url = `${this._baseUrl}${endpoint}`;
+    return `${url}?${search}`;
+    // return [url, search].join('?');
   }
 }
 
