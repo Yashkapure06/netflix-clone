@@ -1,6 +1,6 @@
 import path from 'path';
 
-const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/';
+const IMAGE_BASE_URL = "https://image.tmdb.org/t/p";
 
 export const ImageSizes = {
   poster: 'w500',
