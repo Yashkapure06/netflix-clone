@@ -1,5 +1,6 @@
-import path from 'path';
-import qs from 'query-string';
+// import path from 'path';
+// import qs from 'query-string';
+import URLSearchParams from 'url-search-params';
 
 class Api {
   constructor({ baseUrl, searchParams }) {
@@ -37,7 +38,8 @@ class Api {
   }
 
   _generateUrl(endpoint, params) {
-    const search = qs.stringify({ ...this._baseSearchParams, ...params });
+    const search = new URLSearchParams(this._baseSearchParams);
+    // const search = qs.stringify({ ...this._baseSearchParams, ...params });
     // const url = path.join(this._baseUrl, endpoint);
     const url = `${this._baseUrl}${endpoint}`;
     return `${url}?${search}`;
