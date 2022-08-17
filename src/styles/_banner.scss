@@ -1,0 +1,72 @@
+.banner {
+  position: relative;
+  color: white;
+  object-fit: contain;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    margin: 10px 0;
+  }
+
+  &__description {
+    width: 45rem;
+    line-height: 1.3rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 80px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+  &__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(51, 51, 51, 0.5);
+
+    &:hover {
+      color: #000;
+      background-color: #e6e6e6;
+      transition: all 0.2s;
+    }
+  }
+
+  &__cover {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+}
+
