@@ -1,0 +1,62 @@
+.media-card {
+  position: relative;
+  cursor: pointer;
+  transition: 360ms;
+
+  &:hover {
+    transform: scale(1.1);
+    
+    .media-card {
+      &__cover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__poster {
+    flex: 0 0 auto;
+    object-fit: cover;
+    width: auto;
+    border-radius: 15px;
+    height: 150px;
+    transition: transform 360ms;
+    margin-right: 10px;
+
+    &--large {
+      height: 250px;
+    }
+  }
+
+  &__cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 360ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-size: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
