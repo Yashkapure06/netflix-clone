@@ -5,6 +5,12 @@
 ![image](https://user-images.githubusercontent.com/61585443/185205338-c20bb089-618f-49e2-b740-1c02838030a4.png)
 
 
+
+<h3>Stargazers</h3>
+
+[![Stargazers repo roster for @Yashkapure06/netflix-clone](https://reporoster.com/stars/dark/Yashkapure06/netflix-clone)](https://github.com/Yashkapure06/netflix-clone/stargazers)
+        
+        
 ***
 #### How to install ReactJs?
 
