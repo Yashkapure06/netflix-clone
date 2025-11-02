@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 
-import tmdbApi from '../api/tmdb.js';
+import tmdbApi from "../api/tmdb.js";
 import Cards from "./Cards";
 
 const Slider = ({ mediaType, title, path, params = {}, isLarge }) => {
-    const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-        const json = await tmdbApi.get(path, params);
-        setItems(json.results);
-        };
-        fetchData();
+  useEffect(() => {
+    const fetchData = async () => {
+      const json = await tmdbApi.get(path, params);
+      setItems(json.results);
+    };
+    fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    
-    return (
-        <div className="media-slider">
+  }, []);
+
+  return (
+    <div className="media-slider">
       <h3 className="media-slider__title">{title}</h3>
       <div className="media-slider__cards">
         {items.map((media) => (
@@ -29,7 +29,7 @@ const Slider = ({ mediaType, title, path, params = {}, isLarge }) => {
         ))}
       </div>
     </div>
-    );
-}
+  );
+};
 
 export default Slider;
