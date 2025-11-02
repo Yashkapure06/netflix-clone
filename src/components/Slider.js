@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import tmdbApi from '../api/tmdb';
+import tmdbApi from '../api/tmdb.js';
 import Cards from "./Cards";
 
 const Slider = ({ mediaType, title, path, params = {}, isLarge }) => {
