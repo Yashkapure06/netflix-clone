@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import tmdbApi from '../api/tmdb.js';
+import tmdbApi from '../api/tmdb';
 
 const TrailerModal = ({ mediaType, mediaId, onClose }) => {
     
