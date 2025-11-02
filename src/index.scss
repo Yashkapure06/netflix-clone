@@ -1,8 +1,8 @@
-@import 'styles/banner';
-@import 'styles/header';
-@import 'styles/media-card';
-@import 'styles/media-slider';
-@import 'styles/trailer-modal';
+@use 'styles/banner' as *;
+@use 'styles/header' as *;
+@use 'styles/media-card' as *;
+@use 'styles/media-slider' as *;
+@use 'styles/trailer-modal' as *;
 
 body {
   margin: 0;
